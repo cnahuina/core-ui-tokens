@@ -1,5 +1,5 @@
 {
-  "./.": {
+  "cds/Mode": {
     "al": {
       "color": {
         "magenta": {
@@ -942,7 +942,7 @@
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "./."
+      "cds/Mode"
     ]
   }
 }
