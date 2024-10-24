@@ -1,7 +1,7 @@
 // MyNewComponent.js
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import cds from './cds-tokens.js';
+import cds from './variables.js';
 
 const MyNewComponent = () => {
   return (
@@ -21,6 +21,10 @@ const styles = StyleSheet.create({
   titleGiant: {
     ...cds.sp.text.title.giant.value,
     color: cds.sp.color.text.extreme.value,
+  },
+  titleDisplay: {
+    ...cds.sp.text.title.display.value,
+    color: cds.sp.color.text.dark.value
   },
   paragraphMedium: {
     fontSize: cds.al.font.size.md,

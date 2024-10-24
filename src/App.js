@@ -5,18 +5,10 @@ function App() {
     <div className="App">
       <div className='header'>
         <span className='sp-text-title-display'>Cardumen Design System</span>
-      </div>
-      <div className='container'>
-        <input type='text' placeholder='Ingrese texto' className='input-default sp-text-paragraph-xl' />
-        <br/>
-        
-        <button className='btn-primary sp-text-label-xl'> Continuar </button>
 
-        <br/>
-        <button className='btn-secondary sp-text-label-xl'>Cancelar</button>
+        <h3 className='sp-text-label-lg-underline'>Prueba de underline y text</h3>
       </div>
-      
-
+      <div className='box sp-text-title-giant'> AA </div>
     </div>
   );
 }

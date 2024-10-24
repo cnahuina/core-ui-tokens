@@ -91,9 +91,6 @@ const cds = {
           "8xl": 48,
           "display": 56,
           "giant": 72,
-        },
-        lineHeight: {
-
         }
         // ... otros atributos de fuente
       },

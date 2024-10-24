@@ -4,352 +4,137 @@
 
 @layer base {
 
-  :root {
-    --al-color-magenta-50: #fae6ef;
-    --al-color-magenta-100: #efb0cd;
-    --al-color-magenta-200: #e78ab4;
-    --al-color-magenta-300: #db5492;
-    --al-color-magenta-400: #d5337d;
-    --al-color-magenta-500: #ca005d;
-    --al-color-magenta-600: #b80055;
-    --al-color-magenta-700: #8f0042;
-    --al-color-magenta-800: #6f0033;
-    --al-color-magenta-900: #550027;
+  @import url(variables.css);
 
-    --al-color-gold-50: #fff6e6;
-    --al-color-gold-100: #ffe2b0;
-    --al-color-gold-200: #ffd48a;
-    --al-color-gold-300: #ffc054;
-    --al-color-gold-400: #ffb433;
-    --al-color-gold-500: #ffa100;
-    --al-color-gold-600: #e89300;
-    --al-color-gold-700: #b57200;
-    --al-color-gold-800: #8c5900;
-    --al-color-gold-900: #6b4400;
-    --al-color-neutral-50: #f5f6f8;
-    --al-color-neutral-100: #dfe2e8;
-    --al-color-neutral-200: #cfd5dd;
-    --al-color-neutral-300: #b9c1ce;
-    --al-color-neutral-400: #acb5c5;
-    --al-color-neutral-500: #97a3b6;
-    --al-color-neutral-600: #8994a6;
-    --al-color-neutral-700: #6b7481;
-    --al-color-neutral-800: #535a64;
-    --al-color-neutral-900: #3f444c;
-    --al-color-green-50: #e6f3ea;
-    --al-color-green-100: #b0d9bc;
-    --al-color-green-200: #8ac69c;
-    --al-color-green-300: #54ad6f;
-    --al-color-green-400: #339d53;
-    --al-color-green-500: #008428;
-    --al-color-green-600: #007824;
-    --al-color-green-700: #005e1c;
-    --al-color-green-800: #004916;
-    --al-color-green-900: #003711;
-    --al-color-blue-50: #e6f3fa;
-    --al-color-blue-100: #b0daef;
-    --al-color-blue-200: #8ac8e7;
-    --al-color-blue-300: #55afdc;
-    --al-color-blue-400: #349fd5;
-    --al-color-blue-500: #0187cb;
-    --al-color-blue-600: #017bb9;
-    --al-color-blue-700: #016090;
-    --al-color-blue-800: #014a70;
-    --al-color-blue-900: #003955;
-    --al-color-orange-50: #fff0e6;
-    --al-color-orange-100: #ffd1b0;
-    --al-color-orange-200: #ffba8a;
-    --al-color-orange-300: #ff9b54;
-    --al-color-orange-400: #ff8733;
-    --al-color-orange-500: #ff6900;
-    --al-color-orange-600: #e86000;
-    --al-color-orange-700: #b54b00;
-    --al-color-orange-800: #8c3a00;
-    --al-color-orange-900: #6b2c00;
-    --al-color-red-50: #fce9e9;
-    --al-color-red-100: #f7bbbb;
-    --al-color-red-200: #f39b9b;
-    --al-color-red-300: #ed6d6d;
-    --al-color-red-400: #e95151;
-    --al-color-red-500: #e42525;
-    --al-color-red-600: #cf2222;
-    --al-color-red-700: #a21a1a;
-    --al-color-red-800: #7d1414;
-    --al-color-red-900: #601010;
-    --al-color-black-900: #1a1d20;
-    --al-color-black-800: #23252a;
-    --al-color-black-700: #2d3036;
-    --al-color-black-600: #393e45;
-    --al-color-black-500: #3f444c;
-    --al-color-black-400: #656970;
-    --al-color-black-300: #7e8287;
-    --al-color-black-200: #dce0e5;
-    --al-color-black-100: #f3f3f6;
-    --al-color-black-0: #ffffff;
-
-    --al-font-size-sm: 0.625rem;
-    --al-font-size-md: 0.75rem;
-    --al-font-size-xl: 1rem;
-    --al-font-size-lg: 0.875rem;
-    --al-font-size-3xl: 1.25rem;
-    --al-font-size-2xl: 1.125rem;
-    --al-font-size-5xl: 1.75rem;
-    --al-font-size-4xl: 1.5rem;
-    --al-font-size-6xl: 2rem;
-    --al-font-size-7xl: 2.5rem;
-    --al-font-size-8xl: 3rem;
-    --al-font-size-display: 3.5rem;
-    --al-font-size-giant: 4.5rem;
-
-    --al-font-weight-light: 300;
-    --al-font-weight-regular: 500;
-    --al-font-weight-bold: 800;
-
-    --al-font-family-primary: "BreeCF";
-    --al-font-family-secondary: "Amor Sans";
-
-    --al-font-letter-spacing-base: 0;
-    --al-font-letter-spacing-half: 0.75;
-    --al-font-letter-spacing-long: 1;
-    --al-font-letter-spacing-short: 0.5;
-
-    --al-border-width-none: 0px;
-    --al-border-width-thin: 1px;
-    --al-border-width-regular: 2px;
-    --al-border-width-thick: 3px;
-
-    --al-border-style-none: "none";
-    --al-border-style-solid: "solid";
-    --al-border-style-dash: "dash";
-
-    --al-border-radius-square: 0rem;
-    --al-border-radius-sm: 0.25rem;
-    --al-border-radius-md: 0.5rem;
-    --al-border-radius-lg: 1rem;
-    --al-border-radius-xl: 1.5rem;
-    --al-border-radius-pill: 3.5rem;
-    --al-border-radius-circle: 31.25rem;
-
-
-    --al-space-sm: 0.125rem;
-    --al-space-md: 0.25rem;
-    --al-space-lg: 0.5rem;
-    --al-space-xl: 0.75rem;
-    --al-space-2xl: 1rem;
-    --al-space-3xl: 1.5rem;
-    --al-space-4xl: 2rem;
-    --al-space-5xl: 2.5rem;
-    --al-space-6xl: 3rem;
-    --al-space-7xl: 3.5rem;
-    --al-space-8xl: 4rem;
-
-    --al-size-icon-sm: 0.75rem;
-    --al-size-icon-md: 1rem;
-    --al-size-icon-lg: 1.25rem;
-    --al-size-icon-xl: 1.5rem;
-    --al-size-icon-2xl: 2rem;
-    --al-size-icon-3xl: 2.5rem;
-
-    --al-font-line-height-base: 100%;
-    --al-font-line-height-short: 125%;
-    --al-font-line-height-half: 150%;
-    --al-font-line-height-long: 200%;
-
-    --sp-color-background-subtle: var(--al-color-neutral-50);
-    --sp-color-background-lightest: var(--al-color-black-0);
-    --sp-color-text-extreme: var(--al-color-black-900);
-    --sp-color-text-medium: var(--al-color-black-300);
-    --sp-color-text-lightest: var(--al-color-black-0);
-    --sp-color-text-subtle: var(--al-color-neutral-500);
-    --sp-color-text-strong: var(--al-color-neutral-800);
-    --sp-color-text-disable: var(--al-color-black-400);
-    --sp-color-text-disable-inverse: var(--al-color-black-500);
-    --sp-color-text-accent: var(--al-color-gold-600);
-    --sp-color-text-brand-extreme: var(--al-color-magenta-700);
-    --sp-color-text-brand-strong: var(--al-color-magenta-600);
-    --sp-color-text-brand-medium: var(--al-color-magenta-500);
-    --sp-color-text-feedback-success: var(--al-color-green-600);
-    --sp-color-text-feedback-warning: var(--al-color-orange-700);
-    --sp-color-text-feedback-critical: var(--al-color-red-600);
-    --sp-color-surface-feedback-success-strong: var(--al-color-green-500);
-    --sp-color-surface-feedback-success-subtle: var(--al-color-green-50);
-    --sp-color-surface-feedback-critical-strong: var(--al-color-red-500);
-    --sp-color-surface-feedback-critical-subtle: var(--al-color-red-50);
-    --sp-color-surface-feedback-warning-strong: var(--al-color-orange-500);
-    --sp-color-surface-feedback-warning-subtle: var(--al-color-orange-50);
-    --sp-color-surface-feedback-informative-strong: var(--al-color-blue-500);
-    --sp-color-surface-feedback-informative-subtle: var(--al-color-blue-50);
-    --sp-color-surface-brand-strong: var(--al-color-magenta-600);
-    --sp-color-surface-brand-medium: var(--al-color-magenta-500);
-    --sp-color-surface-brand-subtle: var(--al-color-magenta-50);
-    --sp-color-surface-accent-strong: var(--al-color-gold-600);
-    --sp-color-surface-opacity-subtle: rgba(255 255 255 / 0.25);
-    --sp-color-surface-opacity-hover: rgba(255 255 255 / 0.1);
-    --sp-color-border-feedback-success: var(--al-color-green-500);
-    --sp-color-border-feedback-critical: var(--al-color-red-500);
-    --sp-color-border-brand-strong: var(--al-color-magenta-700);
-    --sp-color-border-brand-medium: var(--al-color-magenta-500);
-    --sp-color-border-focus: var(--al-color-gold-500);
-    --sp-color-border-extreme: var(--al-color-neutral-800);
-    --sp-color-border-strong: var(--al-color-neutral-500);
-    --sp-color-border-disable: var(--al-color-neutral-300);
-    --sp-color-border-subtle: var(--al-color-black-100);
-    --sp-color-border-light: var(--al-color-neutral-50);
-    --sp-color-icon-darkest: var(--al-color-black-900);
-    --sp-color-icon-extreme: var(--al-color-black-800);
-    --sp-color-icon-strong: var(--al-color-neutral-800);
-    --sp-color-icon-disable: var(--al-color-black-400);
-    --sp-color-icon-medium: var(--al-color-black-300);
-    --sp-color-icon-lightest: var(--al-color-black-0);
-    --sp-color-icon-disable-inverse: var(--al-color-black-500);
-    --sp-color-icon-accent-strong: var(--al-color-gold-600);
-    --sp-color-icon-accent-medium: var(--al-color-gold-500);
-    --sp-color-icon-brand-strong: var(--al-color-magenta-600);
-    --sp-color-icon-brand-subtle: var(--al-color-magenta-100);
-    --sp-color-icon-feedback-success: var(--al-color-green-600);
-    --sp-color-icon-feedback-warning: var(--al-color-orange-700);
-    --sp-color-icon-feedback-critical: var(--al-color-red-600);
-    --sp-color-surface-subtle: var(--al-color-black-100);
-    --sp-color-icon-subtle: var(--al-color-neutral-500);
-    --sp-color-surface-lightest: var(--al-color-black-0);
-    --sp-color-surface-disable-inverse: var(--al-color-black-200);
-    --sp-color-surface-disable: var(--al-color-black-100);
-    --sp-color-surface-brand-extreme: var(--al-color-magenta-700);
-    --sp-color-icon-brand-extreme: var(--al-color-magenta-700);
-    --sp-color-surface-medium: var(--al-color-neutral-400);
-    --sp-color-background-dark: var(--al-color-black-800);
-
-
-  }
 }
 
 @layer components {
 
   .sp-text-title-giant {
-    @apply font-primary font-bold text-size-giant leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightBold text-alFontSizeGiant leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-title-display {
-    @apply font-primary font-bold text-size-display leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightBold text-alFontSizeDisplay leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-title-7xl {
-    @apply font-primary font-bold text-size-7xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightBold text-alFontSize7xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-title-6xl-regular {
-    @apply font-primary font-regular text-size-6xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightRegular text-alFontSize6xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-title-6xl {
-    @apply font-primary font-bold text-size-6xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightBold text-alFontSize6xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-title-5xl {
-    @apply font-primary font-bold text-size-5xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightBold text-alFontSize5xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-title-4xl-regular {
-    @apply font-primary font-regular text-size-4xl leading-line-height-base tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightRegular text-alFontSize4xl leading-alFontLineHeightBase tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-title-3xl {
-    @apply font-primary font-bold text-size-3xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightBold text-alFontSize3xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-title-3xl-regular {
-    @apply font-primary font-regular text-size-3xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightRegular text-alFontSize3xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-title-2xl {
-    @apply font-primary font-bold text-size-2xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightBold text-alFontSize2xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-title-2xl-regular {
-    @apply font-primary font-regular text-size-2xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightRegular text-alFontSize2xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-title-xl {
-    @apply font-primary font-bold text-size-xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightBold text-alFontSizeXl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-title-xl-regular {
-    @apply font-primary font-regular text-size-xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightRegular text-alFontSizeXl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
 
 
   .sp-text-paragraph-6xl {
-    @apply font-primary font-light text-size-6xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightLight text-alFontSize6xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-paragraph-5xl {
-    @apply font-primary font-light text-size-5xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightLight text-alFontSize5xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-paragraph-4xl {
-    @apply font-primary font-light text-size-4xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightLight text-alFontSize4xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-paragraph-3xl {
-    @apply font-primary font-light text-size-3xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightLight text-alFontSize3xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-paragraph-2xl {
-    @apply font-primary font-light text-size-2xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightLight text-alFontSize2xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-paragraph-xl {
-    @apply font-primary font-light text-size-xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightLight text-alFontSizeXl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-paragraph-xl-regular {
-    @apply font-primary font-regular text-size-xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightRegular text-alFontSizeXl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-paragraph-lg {
-    @apply font-primary font-light text-size-lg leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightLight text-alFontSizeLg leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
 
 
   .sp-text-label-5xl {
-    @apply font-primary font-regular text-size-5xl leading-line-height-base tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightRegular text-alFontSize5xl leading-alFontLineHeightBase tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-label-3xl {
-    @apply font-primary font-regular text-size-3xl leading-line-height-base tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightRegular text-alFontSize3xl leading-alFontLineHeightBase tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-label-2xl {
-    @apply font-primary font-regular text-size-2xl leading-line-height-short tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightRegular text-alFontSize2xl leading-alFontLineHeightShort tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-label-xl {
-    @apply font-primary font-regular text-size-xl leading-line-height-base tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightRegular text-alFontSizeXl leading-alFontLineHeightBase tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-label-xl-underline {
-    @apply font-primary underline font-regular text-size-xl leading-line-height-base tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary underline font-alFontWeightRegular text-alFontSizeXl leading-alFontLineHeightBase tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-label-lg-underline {
-    @apply font-primary underline font-light text-size-lg leading-line-height-base tracking-letter-spacing-half ;
+    @apply font-alFontFamilyPrimary underline font-alFontWeightLight text-alFontSizeLg leading-alFontLineHeightBase tracking-alFontLetterSpacingHalf ;
   }
 
   .sp-text-label-lg-light {
-    @apply font-primary font-light text-size-lg leading-line-height-base tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightLight text-alFontSizeLg leading-alFontLineHeightBase tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-label-lg {
-    @apply font-primary font-regular text-size-lg leading-line-height-base tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightRegular text-alFontSizeLg leading-alFontLineHeightBase tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-label-md {
-    @apply font-primary font-regular text-size-md leading-line-height-base tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightRegular text-alFontSizeMd leading-alFontLineHeightBase tracking-alFontLetterSpacingBase ;
   }
 
   .sp-text-label-sm {
-    @apply font-primary font-regular text-size-sm leading-line-height-base tracking-letter-spacing-base ;
+    @apply font-alFontFamilyPrimary font-alFontWeightRegular text-alFontSizeSm leading-alFontLineHeightBase tracking-alFontLetterSpacingBase ;
   }
 }
