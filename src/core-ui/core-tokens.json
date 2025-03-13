@@ -1680,6 +1680,32 @@
                 "type": "other"
               }
             },
+            "x4-regular": {
+              "font-family": {
+                "value": "{al.font.family.primary}",
+                "type": "other"
+              },
+              "font-weight": {
+                "value": "{al.font.weight.regular}",
+                "type": "other"
+              },
+              "line-height": {
+                "value": "{al.font.line-height.x5}",
+                "type": "other"
+              },
+              "font-size": {
+                "value": "{al.font.size.x4}",
+                "type": "other"
+              },
+              "letter-spacing": {
+                "value": "{al.font.letter-spacing.base}",
+                "type": "other"
+              },
+              "text-decoration": {
+                "value": "{al.font.text-decoration.none}",
+                "type": "other"
+              }
+            },
             "x3": {
               "font-family": {
                 "value": "{al.font.family.primary}",
@@ -1901,7 +1927,7 @@
               "type": "other"
             },
             "line-height": {
-              "value": "{al.font.line-height.base}",
+              "value": "{al.font.line-height.x5}",
               "type": "other"
             },
             "font-size": {
@@ -1927,7 +1953,7 @@
               "type": "other"
             },
             "line-height": {
-              "value": "{al.font.line-height.base}",
+              "value": "{al.font.line-height.x3}",
               "type": "other"
             },
             "font-size": {
@@ -1953,7 +1979,7 @@
               "type": "other"
             },
             "line-height": {
-              "value": "{al.font.line-height.near}",
+              "value": "{al.font.line-height.x2}",
               "type": "other"
             },
             "font-size": {
@@ -1979,7 +2005,7 @@
               "type": "other"
             },
             "line-height": {
-              "value": "{al.font.line-height.base}",
+              "value": "{al.font.line-height.xl}",
               "type": "other"
             },
             "font-size": {
@@ -2005,7 +2031,7 @@
               "type": "other"
             },
             "line-height": {
-              "value": "{al.font.line-height.base}",
+              "value": "{al.font.line-height.xl}",
               "type": "other"
             },
             "font-size": {
@@ -2031,7 +2057,7 @@
               "type": "other"
             },
             "line-height": {
-              "value": "{al.font.line-height.base}",
+              "value": "{al.font.line-height.xl}",
               "type": "other"
             },
             "font-size": {
@@ -2057,7 +2083,7 @@
               "type": "other"
             },
             "line-height": {
-              "value": "{al.font.line-height.base}",
+              "value": "{al.font.line-height.lg}",
               "type": "other"
             },
             "font-size": {
@@ -2083,7 +2109,7 @@
               "type": "other"
             },
             "line-height": {
-              "value": "{al.font.line-height.base}",
+              "value": "{al.font.line-height.lg}",
               "type": "other"
             },
             "font-size": {
@@ -2109,7 +2135,7 @@
               "type": "other"
             },
             "line-height": {
-              "value": "{al.font.line-height.base}",
+              "value": "{al.font.line-height.lg}",
               "type": "other"
             },
             "font-size": {
@@ -2135,7 +2161,7 @@
               "type": "other"
             },
             "line-height": {
-              "value": "{al.font.line-height.base}",
+              "value": "{al.font.line-height.md}",
               "type": "other"
             },
             "font-size": {
@@ -2161,7 +2187,7 @@
               "type": "other"
             },
             "line-height": {
-              "value": "{al.font.line-height.base}",
+              "value": "{al.font.line-height.sm}",
               "type": "other"
             },
             "font-size": {
