@@ -28,7 +28,7 @@
             "type": "color"
           },
           "x50": {
-            "value": "#fae6ef",
+            "value": "#ffeef6",
             "type": "color"
           },
           "x100": {
@@ -92,7 +92,7 @@
             "type": "color"
           },
           "x100": {
-            "value": "#dce0e5",
+            "value": "#e3e8ef",
             "type": "color"
           },
           "x200": {
@@ -442,6 +442,10 @@
           "light": {
             "value": "light",
             "type": "text"
+          },
+          "medium": {
+            "value": "medium",
+            "type": "text"
           }
         },
         "text-decoration": {
@@ -746,6 +750,16 @@
           "overlay": {
             "value": "{al.color.opacity.x60}",
             "type": "color"
+          },
+          "brand": {
+            "subtle": {
+              "value": "{al.color.magenta.x50}",
+              "type": "color"
+            },
+            "medium": {
+              "value": "{al.color.magenta.x500}",
+              "type": "color"
+            }
           }
         },
         "text": {
@@ -771,11 +785,11 @@
               "type": "color"
             },
             "disable": {
-              "value": "{al.color.neutral.x500}",
+              "value": "{al.color.neutral.x600}",
               "type": "color"
             },
             "disable-inverse": {
-              "value": "{al.color.neutral.x600}",
+              "value": "{al.color.neutral.x700}",
               "type": "color"
             }
           },
@@ -979,7 +993,7 @@
           },
           "base": {
             "subtle": {
-              "value": "{al.color.brown.x50}",
+              "value": "{al.color.brown.x100}",
               "type": "color"
             },
             "lightest": {
@@ -991,7 +1005,7 @@
               "type": "color"
             },
             "disable": {
-              "value": "{al.color.brown.x100}",
+              "value": "{al.color.brown.x50}",
               "type": "color"
             },
             "medium": {
@@ -1189,7 +1203,7 @@
               "type": "color"
             },
             "subtle": {
-              "value": "{al.color.magenta.x100}",
+              "value": "{al.color.magenta.x50}",
               "type": "color"
             },
             "extreme": {
@@ -1235,6 +1249,10 @@
             "informative": {
               "dark": {
                 "value": "{al.color.blue.x800}",
+                "type": "color"
+              },
+              "medium": {
+                "value": "{al.color.blue.x500}",
                 "type": "color"
               }
             }
@@ -2664,6 +2682,10 @@
           "light": {
             "value": "light",
             "type": "text"
+          },
+          "medium": {
+            "value": "String value",
+            "type": "text"
           }
         },
         "text-decoration": {
@@ -2954,7 +2976,7 @@
       "color": {
         "background": {
           "subtle": {
-            "value": "{al.color.brown.x50}",
+            "value": "{al.color.brown.x100}",
             "type": "color"
           },
           "lightest": {
@@ -2968,6 +2990,16 @@
           "overlay": {
             "value": "{al.color.opacity.x60}",
             "type": "color"
+          },
+          "brand": {
+            "subtle": {
+              "value": "{al.color.magenta.x50}",
+              "type": "color"
+            },
+            "medium": {
+              "value": "{al.color.magenta.x500}",
+              "type": "color"
+            }
           }
         },
         "text": {
@@ -3411,7 +3443,7 @@
               "type": "color"
             },
             "subtle": {
-              "value": "{al.color.magenta.x100}",
+              "value": "{al.color.magenta.x50}",
               "type": "color"
             },
             "extreme": {
@@ -3457,6 +3489,10 @@
             "informative": {
               "dark": {
                 "value": "{al.color.blue.x800}",
+                "type": "color"
+              },
+              "medium": {
+                "value": "{al.color.blue.x500}",
                 "type": "color"
               }
             }
